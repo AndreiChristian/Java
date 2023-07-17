@@ -1,8 +1,11 @@
-public class Main{
+public class Main {
 
-    public static void main(String[] args){
+    static void main(String[] args) {
 
-        System.out.println("Hello from Java again");
+        int x = 123;
+        double y = 3.14;
+        char symbol = '@';
+        String name = "Java";
 
     }
 
