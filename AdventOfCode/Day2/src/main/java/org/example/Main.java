@@ -1,7 +1,18 @@
 package org.example;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        List<String> lines = IOReaderUtil.ReadFile("sample.txt");
+
+        if(lines==null){
+            System.out.println("Could not read file");
+            return;
+        }
+
+        DatabasePasswordValidator.ValidateAllLines(lines);
+
     }
 }
